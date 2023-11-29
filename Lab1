@@ -1,1 +1,23 @@
 
+#include<stdio.h>
+int main()
+{
+    int n,m,a,b,sum=0;
+    do
+    {
+        scanf("%d",&n);
+    }while(n<9);
+    //over people
+    do
+    {
+    scanf("%d",&m);
+    }while(m<n);
+    for(int i=1;n>=m;i++)
+    {
+        a=n/3;
+        b=n/4;
+        n=n+a-b;
+        sum++;
+    }
+    printf("Year:%d",sum);
+}
